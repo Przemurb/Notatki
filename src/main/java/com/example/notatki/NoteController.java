@@ -14,6 +14,7 @@ public class NoteController extends HttpServlet {
         Note note = createNote(request);
         saveNote(note, request);
         String noteUrl = NoteUtils.buildNoteUrl(note);
+        request.setAttribute("noteUrl", noteUrl);
         request.getRequestDispatcher("/conf.jsp").forward(request, response);
     }
 

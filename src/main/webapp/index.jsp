@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Notatnik</h1>
-<form action="save" method="get">
+<form action="save" method="post">
     <fieldset>
         <label for="noteId">Identyfikator notatki</label>
         <input type="text" id="noteId" name="noteId">
