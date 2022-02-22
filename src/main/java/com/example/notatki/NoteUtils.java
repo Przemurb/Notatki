@@ -10,7 +10,7 @@ public class NoteUtils {
         if(note.getType().equals(Note.TYPE_PUBLIC)) {
             return String.format("%s?id=%s", PUBLIC_PATH, note.getId());
         } else if (note.getType().equals(Note.TYPE_PRIVATE)) {
-            return String.format("%S?=%s", PRIVATE_PATH, note.getId());
+            return String.format("%s?id=%s", PRIVATE_PATH, note.getId());
         }
         throw new IllegalArgumentException("invalid note type " + note.getType());
     }
